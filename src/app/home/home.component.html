@@ -1,0 +1,17 @@
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Hola, comunidad!</h1>
+    <p class="lead">Esta es una pagina web, dedicada a aprender mas sobre Angular, Nodejs, Express y Axios entre otros. </p>
+    <p class="lead">Ahora puedes dar clic en un heroe para ver sus porecentaje de poder.</p>
+
+    <hr class="my-4">
+    <div class="row">
+      <div class="col-md-3 text-center" *ngFor="let item of heroes">
+          <img src="{{item.image}}" (click)="goToDetail(item.id)" class="w-100 h-75" alt="...">
+          <p class="display-6">{{item.name}}</p>
+      </div>
+    </div>
+    <hr class="my-4">
+  </div>
+</div>
