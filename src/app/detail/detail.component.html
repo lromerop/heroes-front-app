@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col pt-2">
+            <h1 class="display-6 text-center">Heroe</h1>
+            <hr class="my-4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col pt-2 pb-5 d-flex justify-content-center">
+            <div class="card" style="width: 20rem;">
+                <img src="{{heroesDetail.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="display-6 text-center">{{heroesDetail.name}}</p>
+                    <hr class="my-4">
+                    <h4 class="text-center">Power stats</h4>
+                    <h6 class="text-center">Durability: <span>{{heroesDetail.powerstats.durability}}%</span></h6>
+                    <h6 class="text-center">Intelligence: <span>{{heroesDetail.powerstats.intelligence}}%</span></h6>
+                    <h6 class="text-center">Power: <span>{{heroesDetail.powerstats.power}}%</span></h6>
+                    <h6 class="text-center">Speed: <span>{{heroesDetail.powerstats.speed}}%</span></h6>
+                    <h6 class="text-center">Strength: <span>{{heroesDetail.powerstats.strength}}%</span></h6>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+</div>
